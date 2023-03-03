@@ -1,7 +1,8 @@
 # Layout of Ticker object
 
 ## If you use reqMktData(contract) this is what is returned
-```
+
+```python
 # Stock
 stk = Contract()
 stk.secType = "STK"
