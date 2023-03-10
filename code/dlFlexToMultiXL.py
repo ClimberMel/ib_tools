@@ -20,7 +20,7 @@ rpt = FlexReport(token=parms["token"], queryId=parms["rptID"])
 x = dt.datetime.now()                                               # get current datetime
 #now_str = x.strftime('%Y-%m-%d_%H-%M-%S')                          # format it to string and without milli seconds
 now_str = x.strftime('%Y-%m-%d')                                    # format it to string and only date portion
-output_folder = 'Output/flex/'   # set the main output folder to write reports to
+output_folder = 'output/flex/'   # set the main output folder to write reports to
 out_folder = output_folder + now_str + space + parms["rptID"] + space        # create a path & base filename for the output
 
 # Create an xlsx workbook

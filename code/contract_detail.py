@@ -21,7 +21,6 @@ def connect():
     except Exception as e:
         print(f"{PARMS} causes exception {e}")
 
-
 # Create connection  ---------------------------------------------------------------------
 myConn = connect()
 if myConn.isConnected:

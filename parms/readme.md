@@ -6,12 +6,11 @@
 
 * Example file report.json
 
-* {"rptID":"123456", "token":"11507859573166978654321", rptname":"Activity_allDataYTD_xml", "outfolder":"Output/flex/"}
+* {"rptID":"123456", "token":"11507859573166978654321", rptname":"Activity_allDataYTD_xml", "outfolder":"output/flex/"}
 
 file.py is used to read these json files.
 dlFlexToMultiXL.py has a sample of how I call and use my report.json file
 
 ## Folder structure
 
-* Keep the folder structure as I have it setup, then you can put parm files in the parm folder and output will be written to the Output folder from any of the sample code.
-
+* Keep the folder structure as I have it setup, then you can put parm files in the parm folder and output will be written to the output folder from any of the sample code.
