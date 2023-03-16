@@ -1,5 +1,6 @@
-''' Test running a python module
-    importing a module IS running it.
+'''
+Test running a python module
+importing a module IS running it.
 '''
 
 #import testcode.dlFlexTrades2XL
