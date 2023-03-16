@@ -3,7 +3,7 @@
 .. image:: https://readthedocs.org/projects/ib-tools/badge/?version=latest
   :target: https://ib-tools.readthedocs.io/en/latest/?badge=latest
 
-
+ 
 This GitHub repository includes samples of code to
 work with various components of the ib_insync library.
 
