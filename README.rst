@@ -1,0 +1,8 @@
+Tools to work with Interactive Brokers using ib_insync
+======================================================
+
+This GitHub repository includes samples of code to
+work with various components of the ib_insync library.
+
+Tools will range from Flex Reports to obtaining Positions and Portfolio data.
+You can also retrieve historical and real time data for various assets.
