@@ -1,5 +1,6 @@
-# contract_detail.py
-''' Get contract detail for provided symbol'''
+''' 
+Get contract detail for provided symbol
+'''
 
 #------------------------------------------------------------------------------------------
 # Imports ---------------------------------------------------------------------------------
