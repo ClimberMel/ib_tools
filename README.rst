@@ -1,5 +1,7 @@
-. image:: https://readthedocs.org/projects/ib-tools/badge/?version=latest
-:target: https://ib-tools.readthedocs.io/en/latest/?badge=latest
+``IB Tools``: Tools to work with Interactive Brokers using ib_insync
+====================================================================
+.. image:: https://readthedocs.org/projects/ib-tools/badge/?version=latest
+  :target: https://ib-tools.readthedocs.io/en/latest/?badge=latest
 
 Tools to work with Interactive Brokers using ib_insync
 ======================================================
