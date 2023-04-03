@@ -7,7 +7,6 @@
 
 #   Output files
 *.xls*
-*.txt
 
 #   Flowchart and Word documents
 *.dia
@@ -17,9 +16,10 @@
 #   testcode folder is added here as the whole folder will be ignored 
 #   since the folder is not to be included in the repo nor any contained files
 testcode/
+testDocs/
 
 #   ignore modules starting with test
-test*.py
+test*.*
 
 # ----------------------------------------------------------------------------------------
 # Default .gitignore from https://github.com/github/gitignore/blob/main/Python.gitignore
