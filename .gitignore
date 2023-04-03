@@ -1,7 +1,7 @@
 # My ib_tools project
 #   Setting, Parameters and Config files
 *.json
-*.toml
+#*.toml
 *.yaml
 *.ini
 
