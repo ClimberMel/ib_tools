@@ -1,6 +1,7 @@
-# portfolio_08.py
-#   Test parsing PorfolioItem object
-#   This is working, but it is only selecting STK type positions.  Shold expand to get all positions.
+# portfolio.py
+#   Parsing the PorfolioItem object
+#   This will iterate through all the accounts and append to data into one DataFrame
+
 
 from ib_insync import *
 from ib_insync import objects
@@ -17,7 +18,6 @@ myHoldings  = []      # create a list of my combined positions
 position    = []      # temporary list to hold element from pos during parsing
 
 header = ['Account', 'Alias', 'secType', 'conId', 'Symbol', 'Exchange', 'Currency', 'localSymbol', 'Position', 'avgCost', 'ContractMonth', 'Strike', 'Right', 'Multiplier', 'MarketPrice', 'MarketValue', 'UnrealizedPNL', 'RealizedPNP']
-
 
 for i, a in enumerate(acct):
     myacct = a['account']
