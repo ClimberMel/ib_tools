@@ -8,6 +8,10 @@
 #   Output files
 *.xls*
 
+#   TD output files (TD_ploter, other_indicators)
+emas.csv
+mas.csv
+
 #   Flowchart and Word documents
 *.dia
 *.doc*
