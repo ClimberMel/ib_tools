@@ -20,17 +20,19 @@ ib.connect(pconnect["ip"], pconnect["port"], clientId=pconnect["id"])
 
 # Create basic contract
 
-contract = Stock('TSLA', 'SMART', 'USD')
-#contract = Contract(secType='STK', symbol='AAPL', exchange='SMART', currency='USD')
-#contract = Contract(secType='OPT', symbol='AAPL', exchange='SMART', currency='USD')
+contract = Contract(secType='CRYPTO', symbol='BTC', exchange='PAXOS', currency='USD')
 
 # Qualify contrack (fill in details)
 ib.qualifyContracts(contract)
+
+cds = ib.reqContractDetails(contract)
+
+data = ib.reqMktData(contract)
+while data.last != data.last: ib.sleep(0.01) #Wait until data is in. 
+ib.cancelMktData(contract)
 
 sym = contract.symbol
 sectype = contract.secType
 pExchange = contract.primaryExchange
 
-
-print(sym, sectype, pExchange)
-
+print(sym, sectype, pExchange, data.last)
