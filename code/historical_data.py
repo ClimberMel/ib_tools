@@ -11,8 +11,8 @@ import datetime as dt
 from ib_insync import *
 
 ib = IB()
-ib.connect('127.0.0.1', 4002, clientId=102)
-#ib.connect('127.0.0.1', 7496, clientId=106)
+#ib.connect('127.0.0.1', 4002, clientId=102)
+ib.connect('127.0.0.1', 7496, clientId=106)
 
 # Get path of running module
 import sys, os
@@ -40,7 +40,8 @@ contract = Stock('MMM', 'SMART', 'USD')
 # formatDate:       set to 1, but not sure what it does...
 
 
-edt = '20000101 00:00:01'
+#edt = '20000101 00:00:01'
+edt = ''
 
 barsList = []
 bars = ib.reqHistoricalData(

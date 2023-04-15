@@ -18,19 +18,27 @@ space = ' '
 ib = IB()
 ib.connect(pconnect["ip"], pconnect["port"], clientId=pconnect["id"])
 
-# Create basic contract
+# Create basic stock contract
 
-#contract = Stock('TSLA', 'SMART', 'USD')
-#contract = Contract(secType='STK', symbol='AAPL', exchange='SMART', currency='USD')
-contract = Contract(secType='OPT', symbol='AAPL', exchange='SMART', currency='USD')
+contract = Stock('TSLA', 'SMART', 'USD')
 
 # Qualify contrack (fill in details)
 ib.qualifyContracts(contract)
+
+cds = ib.reqContractDetails(contract)
+
+print(len(cds))
+
+contracts = [cd.contract for cd in cds]
+
+#print(contracts[0])
+
+detail = util.df(contracts)
 
 sym = contract.symbol
 sectype = contract.secType
 pExchange = contract.primaryExchange
 
+#print(sym, sectype, pExchange)
 
-print(sym, sectype, pExchange)
-
+print(detail)

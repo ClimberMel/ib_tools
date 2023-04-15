@@ -2,7 +2,6 @@
 #   Parsing the PorfolioItem object
 #   This will iterate through all the accounts and append to data into one DataFrame
 
-
 from ib_insync import *
 from ib_insync import objects
 import pandas as pd
@@ -17,7 +16,7 @@ space = ' '
 myHoldings  = []      # create a list of my combined positions
 position    = []      # temporary list to hold element from pos during parsing
 
-header = ['Account', 'Alias', 'secType', 'conId', 'Symbol', 'Exchange', 'Currency', 'localSymbol', 'Position', 'avgCost', 'ContractMonth', 'Strike', 'Right', 'Multiplier', 'MarketPrice', 'MarketValue', 'UnrealizedPNL', 'RealizedPNP']
+header = ['Account', 'Alias', 'secType', 'conId', 'Symbol', 'Exchange', 'Currency', 'localSymbol', 'Position', 'avgCost', 'Contract Month', 'Strike', 'Right', 'Multiplier', 'Market Price', 'Market Value', 'Unrealized PNL', 'Realized PNL']
 
 for i, a in enumerate(acct):
     myacct = a['account']
@@ -25,7 +24,7 @@ for i, a in enumerate(acct):
     
     ib = IB()
     ib.connect(pconnect["ip"], pconnect["port"], clientId=pconnect["id"], account=myacct)
-    #ib.connect(pconnect["ip"], 7496, clientId=pconnect["id"])
+    #ib.connect(pconnect["ip"], 7496, clientId=pconnect["id"], account=myacct)
 
     myPort = ib.portfolio()
 
