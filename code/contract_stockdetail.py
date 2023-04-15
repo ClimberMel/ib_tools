@@ -27,18 +27,10 @@ ib.qualifyContracts(contract)
 
 cds = ib.reqContractDetails(contract)
 
-print(len(cds))
-
-contracts = [cd.contract for cd in cds]
-
-#print(contracts[0])
-
-detail = util.df(contracts)
-
 sym = contract.symbol
 sectype = contract.secType
 pExchange = contract.primaryExchange
 
-#print(sym, sectype, pExchange)
+print(sym, sectype, pExchange)
 
-print(detail)
+#print(cds)
