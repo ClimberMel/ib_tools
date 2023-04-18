@@ -21,6 +21,7 @@ mas.csv
 #   since the folder is not to be included in the repo nor any contained files
 testcode/
 testDocs/
+mycode/
 
 #   ignore modules starting with test
 test*.*
