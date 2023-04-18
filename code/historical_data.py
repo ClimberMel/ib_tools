@@ -11,13 +11,13 @@ import datetime as dt
 from ib_insync import *
 
 ib = IB()
-#ib.connect('127.0.0.1', 4002, clientId=102)
-ib.connect('127.0.0.1', 7496, clientId=106)
+ib.connect('127.0.0.1', 4001, clientId=102)
+#ib.connect('127.0.0.1', 7496, clientId=106)
 
 # Get path of running module
 import sys, os
 cDir = os.path.dirname(sys.argv[0])
-cDir = cDir + '/'
+cDir = cDir + '/output/'
 
 #contract = Stock('TSLA', 'SMART', 'USD')
 contract = Stock('MMM', 'SMART', 'USD')
