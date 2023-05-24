@@ -8,7 +8,7 @@
 
 * {"rptID":"123456", "token":"11507859573166978654321", rptname":"Activity_allDataYTD_xml", "outfolder":"output/flex/"}
 
-* I have created a parms.json file that has 2 levels connect (with all the conntion info) and account (With all the account information including alias for the accounts).
+* I have created a parms.json file that has 2 levels: connect (with all the conntion info) and account (With all the account information including alias for the accounts).
 
 * {"A7894561" : "Advisor", "X1234678": "M-ROTH", "X9871235": "F-TFSA", "X5551237": "F-IRA", "X3322114": "M-Margin"}
 
