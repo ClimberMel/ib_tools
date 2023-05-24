@@ -109,3 +109,4 @@ holdings = pd.DataFrame(myHoldings, columns = header)
 # Write DataFrame to CSV File with Default params.
 output_folder = 'output/'
 holdings.to_csv(output_folder + now_str + "_portfolio.csv", index=False)
+print("Saved to: ", output_folder + now_str + "_portfolio.csv")
