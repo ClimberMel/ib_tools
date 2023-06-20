@@ -1,8 +1,7 @@
 # viewPositions.py
 # 2022-07-19 created by ClimberMel
-# Used content from getPositions and getHoldings variations in Z:\VSCode-projects\ib_insync-test and Z:\VSCode-projects\atf_IB_GUI
-# I have now copied it to Z:\VSCode-projects\GitHub\ib_tools
-# and removed all the unneeded code for just viewing and writing to csv all my combined holdings.
+# Used content from getPositions and getHoldings variations
+# I have removed all the unneeded code for just viewing and writing to csv all my combined holdings.
 # This currently (2022-11-20) both displays in a dataframe and writes it out to a CSV file
 # 2023-04-03: Modified to use new parms.json format for connection
 
@@ -24,7 +23,6 @@ myPositions  = []      # create a list of my combined positions
 
 header = ['Account', 'Alias', 'secType', 'conId', 'Symbol', 'Exchange', 'Currency', 'localSymbol', 'tradingClass', 'Position', 'avgCost', 'ContractMonth', 'Strike', 'Right', 'Multiplier']
 x = dt.datetime.now()                       # get current datetime
-#now_str = x.strftime('%Y-%m-%d_%H-%M-%S')   # format it to string and wothout mili seconds
 now_str = x.strftime('%Y-%m-%d_%H-%M')
 
 accounts = file.read_json("parms/accounts.json")
@@ -56,5 +54,5 @@ positions.to_csv(output_folder + now_str + " positions.csv", index=False)
 
 print(dfh)
 
-print('End process')
+print('End process.  File saved to: ' + output_folder + now_str + " positions.csv")
 ib.disconnect()
