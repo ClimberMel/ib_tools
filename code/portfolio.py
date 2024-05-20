@@ -6,7 +6,7 @@ from ib_insync import *
 from ib_insync import objects
 import pandas as pd
 import datetime as dt
-import file
+import code.file as file
 
 parms = file.read_json("parms/parms.json")
 pconnect = parms['connect']
