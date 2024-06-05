@@ -10,7 +10,7 @@ from ib_insync import *
 import pandas as pd
 
 ib = IB()
-ib.connect('127.0.0.1', 4002, clientId=11)
+ib.connect('127.0.0.1', 4001, clientId=11)
 
 # I need data subscription for this to work (currently only SPX, Tick, Trin & VIX works)
 #contracts = [Index('TICK-NYSE', 'NYSE'),Index('TRIN-NYSE', 'NYSE'),Index('SPX', 'CBOE'),Index('INDU', 'NYSE'),Index('COMP', 'NASDAQ'),Index('VIX', 'CBOE')]
