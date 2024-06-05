@@ -13,6 +13,9 @@ In my example you have to put this code in the function onOrderStatusEvent.
 
 import logging
 from logging.handlers import TimedRotatingFileHandler
+
+# NOTE: These could be changed to use ib_async now
+
 from ib_insync import IB, ib, util
 from ib_insync import * 
 
