@@ -11,6 +11,5 @@ Tools will range from Flex Reports to obtaining Positions and Portfolio data.
 You can also retrieve historical and real time data for various assets.
 
 ##### Donation Button
+
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?business=V4B6LEBJDHZSJ&no_recurring=0&item_name=Software+tools+for+finances.&currency_code=USD)
-<!--
-![Mel's GitHub Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=ClimberMel&langs_count=5&theme=merko)]
