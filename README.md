@@ -8,7 +8,7 @@ work with various components of the ib_insync / ib_async library.
 Tools will range from Flex Reports to obtaining Positions and Portfolio data.
 You can also retrieve historical and real time data for various assets.
 
-* Questions about the tools or the modules ib_insync & ib_async should be directed to the discussion group on [Google](https://groups.google.com/g/ib-async). For details on the ib_async repo check the GitHub [website](https://github.com/ib-api-reloaded/ib_async/) and the [Discord](https://discord.gg/22jB7QtVhj/)
+* Questions about the tools or the modules ib_insync & ib_async should be directed to the discussion group on [groups.io](https://groups.io/g/ib-async/). For details on the ib_async repo check the GitHub [website](https://github.com/ib-api-reloaded/ib_async/) and the [Discord](https://discord.gg/22jB7QtVhj/)
 
 
 
