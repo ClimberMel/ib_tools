@@ -1,11 +1,8 @@
 '''
 The ib.reqHistoricalData() works back in time.  
-It starts at the end date and goes back untile it runs out of bars
-or in my case I set a start date so it quits when it gets there.
-I don't know why the duration doesn't seem to do what I anticipated.
+It starts at the end date and goes back until it runs out of bars or reaches the duration
+or you can set a start date (startdt) so it quits when it gets there.
 '''
-
-# Based on: https://ib-insync.readthedocs.io/recipes.html
 
 import datetime as dt
 from ib_insync import *
@@ -30,9 +27,8 @@ contract = Stock('MMM', 'SMART', 'USD')
 # endDateTime:      the start of the loop as it starts with current and goes back through time.
 #                   so it will get everything BEFORE that time.
 #                   Example: edt = '20221230 23:59:59' will get all bars befor the end of 2022
-#                            edt = '' will get everything before the current bar
+#                            edt = '' will get everything before the current bar depending on durationStr
 # duration:         the time frame reqHistoricalData will go back
-#                   without while loop, it would get the two days of 1 min bars preceding edt
 # NOTE:             duration format is integer{SPACE}unit (S|D|W|M|Y)
 # barSizeSetting:   size of each bar data to return, 1 min, 5 min, 1 hour, 1 day etc
 # whatToShow:       TRADES, MIDPOINT, BID, ASK etc
@@ -47,7 +43,7 @@ barsList = []
 bars = ib.reqHistoricalData(
     contract,
     endDateTime=edt,
-    durationStr='30 Y',
+    durationStr='10 Y',
     barSizeSetting='1 day',
     whatToShow='TRADES',
     useRTH=True,
@@ -58,5 +54,5 @@ barsList.append(bars)
 # save to CSV file
 allBars = [b for bars in reversed(barsList) for b in bars]
 df = util.df(allBars)
-df.to_csv(cDir + contract.symbol + ' 1day.csv', index=False)
+#df.to_csv(cDir + contract.symbol + ' 1day.csv', index=False)
 print(df)
