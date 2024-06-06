@@ -10,7 +10,7 @@ import pandas as pd
 
 # Start IB session running
 ib = IB()
-ib.connect('127.0.0.1', 4002, clientId=2)
+ib.connect('127.0.0.1', 4001, clientId=2)
 #ib.connect('127.0.0.1', 7496, clientId=1)
 
 # Create some Forex contracts:
