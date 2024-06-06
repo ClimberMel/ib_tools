@@ -6,9 +6,8 @@ import logging
 #util.logToConsole(logging.DEBUG)
 
 ib = IB()
-ib.connect('127.0.0.1', 7496, clientId=12)
-
-tkr = 'AAPL'
+#ib.connect('127.0.0.1', 7496, clientId=12)
+ib.connect('127.0.0.1', 4001, clientId=16)
 
 # Stock
 stk = Contract()
