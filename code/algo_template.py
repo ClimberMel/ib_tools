@@ -122,5 +122,5 @@ def main():
     IB.run()
 
 
-if name == 'main':
+if __name__ == 'main':
     main()
