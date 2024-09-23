@@ -15,7 +15,7 @@ contracts = [
     Index('TRIN-NYSE', 'NYSE'),
     Index('SPX', 'CBOE'),
     Index('VIX', 'CBOE'),
-    Future('CL', '202409', 'NYMEX'),
+    Future('CL', '202411', 'NYMEX'),
     Stock('AAPL', 'SMART', 'USD'),
     Stock('AMZN', 'SMART', 'USD')
 ]
